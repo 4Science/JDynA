@@ -3,7 +3,7 @@
 	<parent>
 		<artifactId>jdyna</artifactId>
 		<groupId>org.jdyna</groupId>
-		<version>5.9-SNAPSHOT</version>
+		<version>7.0-SNAPSHOT</version>
 	</parent>
 
 	<groupId>org.jdyna</groupId>
@@ -20,11 +20,6 @@
 			 <groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 		</dependency>		
-		
-		<dependency>
-		  <groupId>org.hibernate.common</groupId>
-			<artifactId>hibernate-commons-annotations</artifactId>
-		</dependency>	
 		
 		<dependency>
 			<groupId>commons-lang</groupId>
