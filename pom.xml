@@ -19,7 +19,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	    <org.hibernate.version>5.2.8.Final</org.hibernate.version>
-		<org.spring.version>4.3.6.RELEASE</org.spring.version>
+		<org.spring.version>3.2.16.RELEASE</org.spring.version>
 		<it.cilea.ccommons.version>7.0-SNAPSHOT</it.cilea.ccommons.version>
 	</properties>
 	<distributionManagement>
@@ -263,7 +263,7 @@
 			<dependency>
 				<groupId>it.cilea</groupId>
 				<artifactId>commons-cilea-genericdao</artifactId>
-				<version>2.3</version>
+				<version>${it.cilea.ccommons.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
