@@ -27,7 +27,7 @@ package it.cilea.osd.jdyna.widget;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.Transient;
+import javax.persistence.Lob;
 
 import org.hibernate.annotations.Type;
 
@@ -43,7 +43,8 @@ import it.cilea.osd.jdyna.model.AWidget;
 @Entity
 public abstract class WidgetCustomPointer<AV extends AValue> extends AWidget<AV> {
 	
-	@Type(type="org.hibernate.type.TextType")
+    @Lob
+    @Type(type="org.hibernate.type.MaterializedClobType")
 	protected String filter;
 	
     @Override

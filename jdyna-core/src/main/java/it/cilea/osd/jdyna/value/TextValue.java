@@ -24,20 +24,22 @@
  */
 package it.cilea.osd.jdyna.value;
 
-import it.cilea.osd.jdyna.model.AValue;
-
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Transient;
 
 import org.hibernate.annotations.Type;
+
+import it.cilea.osd.jdyna.model.AValue;
 
 @Entity
 @DiscriminatorValue(value="text")
 public class TextValue extends AValue<String> {	
 	
-	@Type(type="org.hibernate.type.TextType")
+    @Lob
+    @Type(type="org.hibernate.type.MaterializedClobType")
 	@Column(name="textValue")
 	private String real;
 	

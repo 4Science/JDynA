@@ -28,6 +28,7 @@ import java.beans.PropertyEditor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Transient;
 
 import org.hibernate.annotations.Type;
@@ -59,14 +60,16 @@ public abstract class WidgetPointer<AV extends PointerValue> extends AWidget {
 	 *  quindi non puo' essere nullo.
 	 * 
 	 */
-	@Type(type="org.hibernate.type.TextType")
+    @Lob
+    @Type(type="org.hibernate.type.MaterializedClobType")
 	protected String display;
 
 	/**
 	 * filtro da utilizzare nell'autocompletamento per la ricerca. Ad es
 	 * (pointer -> ContattoFisico) +type.name:"cliente"
 	 */
-	@Type(type="org.hibernate.type.TextType")
+    @Lob
+    @Type(type="org.hibernate.type.MaterializedClobType")
 	protected String filtro;
 	
 	protected String indexName;

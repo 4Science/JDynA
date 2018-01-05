@@ -36,6 +36,7 @@ import java.util.Collection;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Transient;
 
 import org.apache.commons.io.FileUtils;
@@ -52,7 +53,8 @@ public abstract class WidgetFile extends AWidget {
 	
 	private String labelAnchor;
 	
-	@Type(type="org.hibernate.type.TextType")
+    @Lob
+    @Type(type="org.hibernate.type.MaterializedClobType")
 	private String fileDescription;
 	
 	/**
