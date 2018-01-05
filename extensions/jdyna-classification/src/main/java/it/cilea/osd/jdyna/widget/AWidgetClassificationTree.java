@@ -60,7 +60,7 @@ public abstract class AWidgetClassificationTree<AV extends ClassificationValue> 
 	 */
 	private boolean chooseOnlyLeaves;
 	
-	@Type(type="org.hibernate.type.StringClobType")
+	@Type(type="org.hibernate.type.TextType")
 	protected String display;
 	
     //getter e setter

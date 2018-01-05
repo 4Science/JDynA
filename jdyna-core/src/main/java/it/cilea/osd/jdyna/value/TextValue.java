@@ -37,7 +37,7 @@ import org.hibernate.annotations.Type;
 @DiscriminatorValue(value="text")
 public class TextValue extends AValue<String> {	
 	
-	@Type(type="org.hibernate.type.StringClobType")
+	@Type(type="org.hibernate.type.TextType")
 	@Column(name="textValue")
 	private String real;
 	

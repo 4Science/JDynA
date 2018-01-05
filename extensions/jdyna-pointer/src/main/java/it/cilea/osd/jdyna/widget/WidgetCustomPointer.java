@@ -43,7 +43,7 @@ import it.cilea.osd.jdyna.model.AWidget;
 @Entity
 public abstract class WidgetCustomPointer<AV extends AValue> extends AWidget<AV> {
 	
-	@Type(type="org.hibernate.type.StringClobType")
+	@Type(type="org.hibernate.type.TextType")
 	protected String filter;
 	
     @Override

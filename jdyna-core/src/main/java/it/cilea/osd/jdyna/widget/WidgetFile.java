@@ -52,7 +52,7 @@ public abstract class WidgetFile extends AWidget {
 	
 	private String labelAnchor;
 	
-	@Type(type="org.hibernate.type.StringClobType")
+	@Type(type="org.hibernate.type.TextType")
 	private String fileDescription;
 	
 	/**

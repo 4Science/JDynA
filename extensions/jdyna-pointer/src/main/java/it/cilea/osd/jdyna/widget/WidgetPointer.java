@@ -59,14 +59,14 @@ public abstract class WidgetPointer<AV extends PointerValue> extends AWidget {
 	 *  quindi non puo' essere nullo.
 	 * 
 	 */
-	@Type(type="org.hibernate.type.StringClobType")
+	@Type(type="org.hibernate.type.TextType")
 	protected String display;
 
 	/**
 	 * filtro da utilizzare nell'autocompletamento per la ricerca. Ad es
 	 * (pointer -> ContattoFisico) +type.name:"cliente"
 	 */
-	@Type(type="org.hibernate.type.StringClobType")
+	@Type(type="org.hibernate.type.TextType")
 	protected String filtro;
 	
 	protected String indexName;
