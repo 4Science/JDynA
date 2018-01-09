@@ -357,7 +357,7 @@ public abstract class SimpleDynaController <P extends Property<TP>, TP extends P
 	/** Redirige sulla pagina del dettaglio */
 	public ModelAndView redirect(AnagraficaSupport<P, TP> epi,HttpServletRequest request) {
 	    String path = Utils.getAdminSpecificPath(request, null);
-		return new ModelAndView(getListView()+"?path="+path, null);
+		return new ModelAndView(getListView()+"?path="+path);
 	}
 	
 	public String getI18nPrefix() {

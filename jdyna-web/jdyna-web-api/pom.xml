@@ -9,11 +9,6 @@
 	<artifactId>jdyna-web-api</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webflow</artifactId>
-			<version>1.0.4</version>
-		</dependency>
-		<dependency>
 			<groupId>it.cilea</groupId>
 			<artifactId>commons-cilea-webapi</artifactId>
 			<version>${it.cilea.ccommons.version}</version>
