@@ -11,9 +11,7 @@
   <modules>
   	<module>jdyna-date</module>
   	<module>jdyna-classification</module>
-  	<module>jdyna-subject</module>
   	<module>jdyna-pointer</module>
-  	<module>jdyna-formula</module>
   	<module>jdyna-number</module>
   	<module>jdyna-boolean</module>
   	<module>jdyna-checkradio</module>

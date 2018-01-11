@@ -131,7 +131,6 @@
          <modules>
             <module>jdyna-core</module>
             <module>extensions</module>            
-            <module>jdyna-web</module>            
          </modules>
       </profile>
 	</profiles>
@@ -158,7 +157,6 @@
 	<modules>
 		<module>jdyna-core</module>
 		<module>extensions</module>
-		<module>jdyna-web</module>
 	</modules>
 
 	<dependencyManagement>
@@ -271,18 +269,6 @@
 			<dependency>
 				<artifactId>spring-jdbc</artifactId>
 				<groupId>org.springframework</groupId>
-				<version>${org.spring.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>		
-				<version>${org.spring.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>		
 				<version>${org.spring.version}</version>
 			</dependency>
 			
