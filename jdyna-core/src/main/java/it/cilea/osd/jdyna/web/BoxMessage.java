@@ -83,7 +83,7 @@ public class BoxMessage
 
     public void setShowInEdit(boolean showInEdite)
     {
-        this.showInEdit = showInEdit;
+        this.showInEdit = showInEdite;
     }
 
     public boolean isUseBodyAsKeyMessageBundle()

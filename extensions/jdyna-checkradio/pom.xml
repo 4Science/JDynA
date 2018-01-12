@@ -15,12 +15,5 @@
   		<type>jar</type>
   		<scope>compile</scope>
   	</dependency>
-  	<dependency>
-  		<groupId>org.jdyna</groupId>
-  		<artifactId>jdyna-subject</artifactId>
-  		<version>${project.version}</version>  		
-  		<type>jar</type>
-  		<scope>compile</scope>
-  	</dependency>
   </dependencies>
 </project>
